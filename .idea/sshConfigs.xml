@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" id="597a116c-5e90-41f0-a1ad-8e39dbd4ed36" customName="colint" nameFormat="CUSTOM">
+        <option name="customName" value="colint" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
