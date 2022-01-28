@@ -23,14 +23,16 @@ public class CallableTest implements Callable<Integer> {
 
 class ThreadNew {
     public static void main(String[] args) {
+        //创建对象
         CallableTest callableTest = new CallableTest();
-
+        //通过参加Future对象，实现Callable的调用
         FutureTask<Integer> futureTask = new FutureTask<Integer>(callableTest);
 
+        //创建Thread对象，使用start(),实现call()的调用
         Thread thread = new Thread(futureTask);
         thread.start();
 
-        //接受返回值
+        //接受返回值，通过get()，获取返回值
         try {
             Object o = futureTask.get();
             System.out.println("总和为：" + o);
